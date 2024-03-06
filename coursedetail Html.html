@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link rel="stylesheet" type="text/css" href="css/about.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="src/jquery.horizontalmenu.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous"></script>
+	<script src="src/jquery.horizontalmenu.js"></script>
+	<title>Course</title>
+</head>
+
+<body>
+	<div class="navbar">
+		<nav>
+			<img src="img/LOGO2.png" alt="" width="100px">
+			<ul>
+				<li><a href="index.html"> Home</a> </li>
+				<li><a href="about.html"> About US</a></li>
+				<li>
+					<div class="dropdown">
+						<button class="dropbtn">Course</button>
+						<div class="dropdown-content">
+							<a href="course.html">Course detail</a>
+							<a href="shedule.html">Schedule HTML</a>
+							<a href="scheduleCSS.html">Schedule CSS</a>
+						</div>
+					</div>
+				</li>
+				<li><a href="contact.html"> Contact US</a></li>
+				<a href="/"><img src="" alt="" width="30"></a>
+			</ul>
+		</nav>
+	</div>
+	<div class="img">
+		<h1>Course Programing</h1>
+		<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+		<div class="text2">
+		</div>
+	</div>
+	<div class="ah-tab-wrapper">
+		<div class="ah-tab">
+			<a class="ah-tab-item" data-ah-tab-active="true" href="">Course</a>
+			<a class="ah-tab-item" href="">Instructure</a>
+			<a class="ah-tab-item" href="">Schedule</a>
+		</div>
+		<div class="ah-tab-content-wrapper">
+			<div class="ah-tab-content" data-ah-tab-active="true">
+				<div class="container">
+					<div class="content-section">
+
+						<div class="content">
+							<h1>HTML</h1>
+							<h3>Lorem ipsum dolor sit amet, consectetur adipisicing</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat.</p>
+							<div class="button">
+								<a href="course.html">Back</a>
+							</div>
+						</div>
+
+						<img src="img/html5.png">
+
+					</div>
+
+				</div>
+			</div>
+
+			<div class="ah-tab-content">
+
+				<div class="container">
+					<div class="content-section">
+
+						<div class="content">
+							<h1>Instructure</h1>
+							<h3>Lorem ipsum dolor sit amet, consectetur adipisicing</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat.</p>
+						</div>
+
+						<img src="img/cw kantor.jpg">
+
+					</div>
+
+				</div>
+			</div>
+			<div class="ah-tab-content">
+				<h2><a href="coursedetail Html.html">Schedule</a></h2>
+				<div class="container">
+
+				</div>
+			</div>
+		</div>
+
+
+		<script>
+			$(function () {
+				$('.ah-tab-wrapper').horizontalmenu({
+					itemClick: function (item) {
+						$('.ah-tab-content-wrapper .ah-tab-content').removeAttr('data-ah-tab-active');
+						$('.ah-tab-content-wrapper .ah-tab-content:eq(' + $(item).index() + ')').attr('data-ah-tab-active', 'true');
+						return false; //if this finction return true then will be executed http request
+					}
+				});
+			});
+		</script>
+	</div>
+	</div>
+	<div>
+		<footer class="footer">
+			<div class="social">
+				<a href=""><i class="fa fa-instagram"></i></a>
+				<a href=""><i class="fa fa-facebook"></i></a>
+				<a href=""><i class="fa fa-twitter"></i></a>
+
+			</div>
+			<ul class="list">
+				<li>
+					<a href="index.html">Home</a>
+				</li>
+				<li>
+					<a href="about.html">About</a>
+				</li>
+				<li>
+					<a href="sitemap.html">Sitemap</a>
+				</li>
+				<li>
+					<a href="privacipolicy.html">Privacy Policy</a>
+				</li>
+			</ul>
+			<p class="copyright">
+				ABC LEarn Center @2022
+			</p>
+		</footer>
+		<script>
+			var loader = document.getElementById("preloader");
+			setTimeout(() => {
+				loader.style.display = "none"
+			}, "500")
+		</script>
+</body>
+
+</html>

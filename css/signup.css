@@ -1,0 +1,208 @@
+.card-content2 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-left: -50px;
+    padding: 50px;
+    gap: 10px;
+}
+
+.card-row2 {
+    width: 100%;
+    margin: 0 5px;
+    display: flex;
+}
+
+.card-column2 {
+    width: 20%;
+    padding: 0 16px;
+    display: flex;
+}
+
+.card2 {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
+    transition: 1s;
+}
+
+.card:hover {
+    background-color: rgb(62, 81, 87);
+    box-shadow: 0 16px 32px 0 rgba(246, 56, 189, 0.8);
+}
+
+
+
+.signin {
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+.form-group button {
+    margin: 15px 0;
+    width: 100%;
+    background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    border: 1px white;
+}
+
+input {
+    height: 20px;
+    margin-bottom: 10px;
+    width: 400px;
+    padding: 8px;
+    border-radius: 4px;
+    box-shadow: 5px 5px rgb(93, 160, 144);
+
+}
+
+input:hover {
+    background-color: rgb(215, 215, 214);
+}
+
+h6 {
+    color: rgb(130, 127, 127);
+    margin-right: 330px;
+    margin-bottom: 5px;
+}
+h2{
+    color:gray;
+    margin-bottom: 10px;
+}
+
+button {
+    background: rgb(99, 138, 180);
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+
+html {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    background: #f7f5ff;
+    display: flex;
+    flex-flow: column;
+    height: 100vh;
+}
+
+header {
+    justify-content: center;
+    width: 100%;
+    display:flex;
+    height: 70vh;
+    margin:30px auto;
+    background-image: url("../img/BrokenReadyEchidna-size_restricted.gif");
+    background-size: cover;
+    align-items: center;
+}
+
+header #row {
+    height: 50px;
+    padding: 0 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header #jumbotron {
+    height: 200px;
+    background-image: url("img/bg33.jpg");
+    color: white;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+header #brand {
+    flex: 1;
+}
+
+header #menu {
+    margin-right: 20px;
+}
+
+header #menu ul {
+    display: flex;
+    list-style: none;
+}
+
+header #menu ul li {
+    margin: 5px;
+}
+
+header #menu ul li a {
+    height: 40px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    border-radius: 5px;
+    color: #ccc;
+}
+
+header #menu ul li a.active {
+    border: solid 1px #fff;
+    color: #fff;
+}
+
+header #menu ul li a:not(.active):hover {
+    background: whitesmoke;
+}
+
+header #account {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #fff;
+}
+
+main {
+    flex: 1;
+    margin: 20px 5px;
+}
+
+main #products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 30px;
+}
+
+main #products .card {
+    height: 170px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, .2);
+    color: #fff;
+}
+
+main #products .card:first-child {
+    background-image: url("../img/119822.gif");
+}
+
+main #products .card:nth-child(2) {
+    background-image: url("../img/giphy.gif");
+}
+
+main #products .card:last-child {
+    background-image: url("../img/0QL6FFv.gif");
+}
+
+
+
+@media screen and (max-width: 600px) {
+    main #products {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

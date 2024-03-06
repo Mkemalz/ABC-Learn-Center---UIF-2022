@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body{
+    /* background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%); */
+    overflow-x: hidden;
+    animation:color-change-5x 1s linear infinite alternate both;
+}
+
+@keyframes color-change-5x{0%{background:#547a7d}25%{background:#5f3a74}50%{background:#58dca5}75%{background:#50aab4}100%{background:#3bd80d}}
+
+.card-content {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	margin-top: 30px;
+  margin-left: -50px;
+	padding: 50px;
+  gap: 10px;
+  }
+  .card-row{
+	width: 100%;
+	margin: 0 5px;
+	display: flex;
+  }
+  .card-column{
+	width: 300%;
+	padding: 0 16px;
+	display: flex;
+  }
+  .card{
+	background-color: rgb(112, 239, 241);
+	border-radius: 8px;
+	padding: 16px;
+	box-shadow: 0 30px 40px 0 rgba(71, 237, 243, 0.4);
+	transition: 1s;
+  }
+  .card:hover{
+	background-color:rgb(62, 81, 87);
+	box-shadow: 0 16px 32px 0 rgba(246, 56, 189, 0.8);
+  }
+   h3{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-style: oblique;
+  }
+  
+   p{
+    color: rgb(0, 0, 0);
+    text-align: center;
+
+  }
+  .button a{
+    background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
+    border-radius: 9px;
+    padding: 10px 157px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    
+  }
+  .button :hover{
+    background-color:rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+}
